@@ -247,3 +247,40 @@ h1, h2, h3, h4, h5, h6 {
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
+
+.frame-link-img {
+    position: absolute;
+    bottom: 60px;
+    right: 43px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #000;
+    opacity: .4;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    z-index: 11;
+    transition: .5s all;
+    cursor: pointer;
+}
+
+.frame-link-img:hover {
+    opacity: .6;
+}
+
+.frame-link-img img {
+    display: block;
+    width: 25px;
+}
+
+.frame-link-img.center {
+    bottom: -230px;
+    opacity: .25;
+    transition: .5s all;
+}
+
+.frame-link-img.center:hover {
+    opacity: .4;
+}
