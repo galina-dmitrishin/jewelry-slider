@@ -33,15 +33,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrap-img {
     flex: 0 1 24%;
-    margin: 0 auto;    
-    margin: 10px;
+    margin: 0 auto;
     height: 100%;
     min-width: 0;
 }
 
+.wrap-img-adapt-height {
+    position: relative;
+    padding-top: 125%; /* (575:460)*100% */
+}
+
+.wrap-img-adapt-height:before {
+    display: block; /* отображать элемент как блок */
+    content: ''; /* содержимое псевдоэлемента */
+    width: 100%; /* ширина элемента */
+  }
+
+.wrap-img-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 .wrap-rotate {    
     position: relative;
-    height: 575px;
+    /*height: 575px;*/
     padding: 10px;
 }
 
@@ -54,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }*/
 
 .wrap-rotate.element-2 .frame-img {
-    top: 50%;
+    top: 34%;
 }
 
 .wrap-rotate.element-2 {
@@ -250,10 +268,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .frame-link-img {
     position: absolute;
-    bottom: 60px;
-    right: 43px;
-    width: 60px;
-    height: 60px;
+    bottom: 43px;
+    right: 42px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid #fff;
     background-color: #000;
@@ -272,11 +290,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .frame-link-img img {
     display: block;
-    width: 25px;
+    width: 22px;
 }
 
 .frame-link-img.center {
-    bottom: -230px;
+    bottom: 51px;
     opacity: .25;
     transition: .5s all;
 }
